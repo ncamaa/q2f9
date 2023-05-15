@@ -1,0 +1,60 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.2.1//EN
+N:;Hamo Swiss חמו שוויץ;;;
+FN:Hamo Swiss חמו שוויץ
+ORG:Kibbutz;
+item1.TEL;type=pref:+41774305531
+item1.X-ABLabel:mobile
+X-SOCIALPROFILE:x-apple:+41%2077%20430%2055%2031
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.2.1//EN
+N:Marzer;Yael;;;
+FN:Yael Marzer
+ORG:Jordan 2019;
+EMAIL;type=INTERNET;type=HOME;type=pref:yaelm127@gmail.com
+TEL;type=CELL;type=VOICE;type=pref:0526359567
+TEL;type=WORK;type=FAX:32305481
+item1.URL;type=pref:https://drive.google.com/open?id=1Bw-Y-K-S6l4FRUSw5qYTOTX51o-JrIad
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.2.1//EN
+N:Bohms;Nir Tuvia;;;
+FN:Nir Tuvia Bohms
+ORG:Jordan 2019;
+EMAIL;type=INTERNET;type=HOME;type=pref:nirboms@gmail.com
+EMAIL;type=INTERNET;type=WORK:email
+TEL;type=CELL;type=VOICE;type=pref:0509594388
+TEL;type=WORK;type=FAX:39017909
+TEL;type=IPHONE;type=CELL;type=VOICE:049850829
+item1.URL;type=pref:https://drive.google.com/open?id=15gwmdcAUzjg6ARjgYiC5CammZaGZPzn3
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.2.1//EN
+N:Reinus;Einat;;;
+FN:Einat Reinus
+ORG:Jordan 2019;
+EMAIL;type=INTERNET;type=HOME;type=pref:einatrein@gmail.com
+TEL;type=CELL;type=VOICE;type=pref:0528089834
+TEL;type=WORK;type=FAX:21517842
+item1.URL;type=pref:https://drive.google.com/open?id=1bIDZiurNlTBX5WD9GHzdpGneJdqhKL_W
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 13.2.1//EN
+N:Dotan;Adi;;;
+FN:Adi Dotan
+ORG:Jordan 2019;
+EMAIL;type=INTERNET;type=HOME;type=pref:r_berry17@yahoo.com
+TEL;type=CELL;type=VOICE;type=pref:0527702854
+TEL;type=WORK;type=FAX:20053358
+item1.URL;type=pref:https://drive.google.com/open?id=1efzMCzQl8clcuVcbIprywaf0RXQmT6ih
+item1.X-ABLabel:_$!<HomePage>!$_
+END:VCARD
