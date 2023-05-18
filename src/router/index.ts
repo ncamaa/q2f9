@@ -10,6 +10,8 @@ import { FB_auth } from 'boot/firebase'
 
 import routes from './routes'
 
+import { Notify } from 'quasar'
+
 const noAuthRoutes = ['LoginPage', 'SignUp']
 
 /*
@@ -40,7 +42,6 @@ export default route(function (/* { store, ssrContext } */) {
 
   Router.beforeEach(async (to, from, next) => {
     if (noAuthRoutes.includes(to.name as string)) {
-      // console.log('Allowed route: ', to.name)
       next()
     } else {
       try {
@@ -48,15 +49,35 @@ export default route(function (/* { store, ssrContext } */) {
         const user = FB_auth.currentUser
 
         if (!user) {
-          // console.log('User is not logged in. Redirecting to LoginPage page')
+          // add a notification here using quasar Notify
+          Notify.create({
+            message: 'You must be logged in to access this page',
+            color: 'negative',
+            icon: 'warning',
+            position: 'bottom',
+          })
+
+          console.log(
+            'User is not logged in. Redirecting to LoginPage page',
+            to
+          )
+
           next({ name: 'LoginPage' })
         } else {
           // user is logged in
           next()
         }
       } catch (err) {
+        // add a notification here using quasar Notify
+        Notify.create({
+          message: 'You must be logged in to access this page',
+          color: 'negative',
+          icon: 'warning',
+          position: 'bottom',
+        })
         console.log(
-          "can't get user from auth service. Redirecting to LoginPage page"
+          "can't get user from auth service. Redirecting to LoginPage page",
+          to
         )
         next({ name: 'LoginPage' })
       }

@@ -96,8 +96,6 @@ export default defineComponent({
     const userStore = useUserStore()
     const user = computed(() => userStore.auth.user)
 
-    console.log('user', userStore.auth.user)
-
     const logout = async () => {
       // logout with firebase auth
       await FB_auth.signOut()

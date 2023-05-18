@@ -6,8 +6,6 @@ import { getFunctions, connectFunctionsEmulator } from 'firebase/functions'
 
 const FIREBASE_CONFIG_PARSED = JSON.parse(process.env.FIREBASE_CONFIG)
 
-console.log({ FIREBASE_CONFIG_PARSED })
-
 export const FB = initializeApp(FIREBASE_CONFIG_PARSED)
 export const FB_auth = getAuth(FB)
 export const FB_db = getFirestore(FB)
@@ -19,12 +17,13 @@ if (FIREBASE_CONFIG_PARSED.use_emulator === 'true') {
   connectAuthEmulator(FB_auth, 'http://localhost:9099')
   connectFirestoreEmulator(FB_db, 'localhost', 8080)
   connectFunctionsEmulator(FB_functions, 'localhost', 5001)
+} else {
+  console.log('Using remote services')
 }
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files
 export default boot(async ({ router, store }) => {
-  console.log({ store })
   // on auth state change, redirect to login
   FB_auth.onAuthStateChanged((user) => {
     console.log('Auth state changed')
@@ -33,5 +32,3 @@ export default boot(async ({ router, store }) => {
     router.push({ name: 'LoginPage' })
   })
 })
-
-// })
