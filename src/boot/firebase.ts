@@ -4,13 +4,21 @@ import { getAuth, connectAuthEmulator } from 'firebase/auth'
 import { getFirestore, connectFirestoreEmulator } from 'firebase/firestore'
 import { getFunctions, connectFunctionsEmulator } from 'firebase/functions'
 
-const firebaseConfig = JSON.parse(process.env.FIREBASE_CONFIG)
+const FIREBASE_CONFIG_PARSED = JSON.parse(process.env.FIREBASE_CONFIG)
 
-export const FB = initializeApp(firebaseConfig)
+console.log({ FIREBASE_CONFIG_PARSED })
 
+export const FB = initializeApp(FIREBASE_CONFIG_PARSED)
 export const FB_auth = getAuth(FB)
 export const FB_db = getFirestore(FB)
 export const FB_functions = getFunctions(FB)
+
+if (FIREBASE_CONFIG_PARSED.use_emulator === 'true') {
+  console.log('Using emulators')
+  connectAuthEmulator(FB_auth, 'http://localhost:9099')
+  connectFirestoreEmulator(FB_db, 'localhost', 8080)
+  connectFunctionsEmulator(FB_functions, 'localhost', 5001)
+}
 
 // "async" is optional;
 // more info on params: https://v2.quasar.dev/quasar-cli/boot-files

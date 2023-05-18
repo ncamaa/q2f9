@@ -1,1 +1,10 @@
 // app global css in SCSS form
+
+p.firebase-emulator-warning {
+  display: none !important;
+}
+
+// cursor pointer
+.cursor-pointer {
+  cursor: pointer;
+}
