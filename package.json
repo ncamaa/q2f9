@@ -1,10 +1,10 @@
 {
-  "name": "quasar-project",
+  "name": "q2f9",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
-  "author": "Codama Support <info@codama.dev>",
-  "private": true,
+  "description": "Quasar 2 + Firebase 9 (including functions) + Typescript + Vite",
+  "productName": "Q2F9",
+  "author": "Nadav Cohen <ncamaa@gmail.com>",
+  "public": true,
   "scripts": {
     "lint": "eslint --ext .js,.ts,.vue ./",
     "format": "prettier --write \"**/*.{js,ts,vue,scss,html,md,json}\" --ignore-path .gitignore",
@@ -35,7 +35,7 @@
     "typescript": "^4.5.4"
   },
   "engines": {
-    "node": "^18 || ^16 || ^14.19",
+    "node": "^18",
     "npm": ">= 6.13.4",
     "yarn": ">= 1.21.1"
   }

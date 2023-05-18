@@ -13,6 +13,7 @@ export const FB_auth = getAuth(FB)
 export const FB_db = getFirestore(FB)
 export const FB_functions = getFunctions(FB)
 
+// Connect to emulators if running locally, and if the config says to
 if (FIREBASE_CONFIG_PARSED.use_emulator === 'true') {
   console.log('Using emulators')
   connectAuthEmulator(FB_auth, 'http://localhost:9099')
