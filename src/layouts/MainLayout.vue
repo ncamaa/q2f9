@@ -11,7 +11,7 @@
           @click="toggleLeftDrawer"
         />
 
-        <q-toolbar-title> Quasar App </q-toolbar-title>
+        <q-toolbar-title> 💫 Quasar v2 + 🔥 Firebase v9 </q-toolbar-title>
 
         <div>
           <!-- Logout button -->
