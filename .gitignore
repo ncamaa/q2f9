@@ -33,3 +33,5 @@ yarn-error.log*
 *.njsproj
 *.sln
 
+firebase-debug.log
+firestore-debug.log
